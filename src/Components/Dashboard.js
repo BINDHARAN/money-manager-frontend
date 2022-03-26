@@ -63,7 +63,7 @@ BootstrapDialogTitle.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-export function Dashboard() {
+export function Dashboard({mode}) {
   //alert add incom
   const [open, setOpen] = React.useState(false);
 
@@ -138,19 +138,19 @@ export function Dashboard() {
           >
             <Link
               to="/weekly"
-              style={{ color: "black", textDecoration: "none" }}
+              style={{ color:  mode === "light" ? "black" : "white" , textDecoration: "none" }}
             >
               <MenuItem>Weekly</MenuItem>
             </Link>
             <Link
               to="/monthly"
-              style={{ color: "black", textDecoration: "none" }}
+              style={{ color: mode === "light" ? "black" : "white", textDecoration: "none" }}
             >
               <MenuItem>Monthly</MenuItem>
             </Link>
             <Link
               to="/yearly"
-              style={{ color: "black", textDecoration: "none" }}
+              style={{ color: mode === "light" ? "black" : "white", textDecoration: "none" }}
             >
               <MenuItem>Yearly</MenuItem>
             </Link>

@@ -37,7 +37,9 @@
   font-family: var(--font-serif);
 }
 .content{
-  font-family: 'Carter One', cursive;
+  /* font-family: 'Carter One', cursive; */
+  font-family: var(  --font-mono );
+  
 
 }
 .home {
@@ -48,6 +50,8 @@
 }
 
 .dashboard{
+  margin-top: 30px;
+
   display: flex;
   justify-content: space-between;
 }

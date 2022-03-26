@@ -25,7 +25,9 @@ import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import GridViewIcon from '@mui/icons-material/GridView';
-import HistoryIcon from '@mui/icons-material/History';function App() {
+import HistoryIcon from '@mui/icons-material/History';
+
+function App() {
   const history = useHistory();
 
   const array = [
@@ -134,7 +136,7 @@ import HistoryIcon from '@mui/icons-material/History';function App() {
               
             </Route>
             <Route path="/dashboard">
-              <Dashboard />
+              <Dashboard  mode={mode}/>
             </Route>
             <Route path="/weekly">
               <Weekly />
