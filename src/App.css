@@ -14,7 +14,6 @@
   padding: 0;
 }
 
-
 .App {
   text-align: center;
 }
@@ -33,33 +32,72 @@
   font-family: var(--font-serif);
   margin-top: 200px;
 }
-.drawer-name{
+.drawer-name {
   font-family: var(--font-serif);
 }
-.content{
+.content {
   /* font-family: 'Carter One', cursive; */
-  font-family: var(  --font-mono );
-  
-
+  font-family: var(--font-mono);
 }
-.home {
+/* .home {
   display: flex;
   gap: 2rem;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.dashboard{
+.home {
   margin-top: 30px;
-
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  font-family: var(--font-serif);
+}
+.dashboard-title {
+  letter-spacing: 2px;
+  font-family: var(--font-serif);
 }
 
-.totalChart,.officeChart,.personalChart{
-  width:40%;
-  margin:40px auto 0;
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .dashboard,
+  .home {
+    flex-direction: column;
+  }
+}
+.totalChart,
+.officeChart,
+.personalChart {
+  width: 40%;
+  margin: 40px auto 0;
   padding: 20px;
   border: 3px double burlywood;
+}
 
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input {
+  width: 50%;
+}
+
+.edit-loadmsg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editpage {
+  margin-top: 40px;
 }
