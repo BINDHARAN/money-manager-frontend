@@ -36,18 +36,13 @@
   font-family: var(--font-serif);
 }
 .content {
-  /* font-family: 'Carter One', cursive; */
+  
   font-family: var(--font-mono);
 }
-/* .home {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
-} */
 
 .home {
   margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,15 +66,35 @@
   .dashboard,
   .home {
     flex-direction: column;
+    width: 100%;
+   
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-add-btn {
+   
+    width: 50%;
   }
 }
 .totalChart,
 .officeChart,
 .personalChart {
-  width: 40%;
+  width: 50%;
   margin: 40px auto 0;
   padding: 20px;
   border: 3px double burlywood;
+  font-family: var(--font-mono);
+
+}
+
+@media only screen and (max-width: 780px) {
+  .totalChart,
+.officeChart,
+.personalChart {
+   
+    width: 70%;
+  }
 }
 
 .text {
@@ -100,4 +115,40 @@
 
 .editpage {
   margin-top: 40px;
+}
+
+.description{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.image {
+  height: 500px;
+  width: 750px;
+  object-fit: over;
+}
+
+.card{
+  width: 850px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: rgb(0 0 0 / 24%) 1px 2px 13px;
+  height: min-content;
+
+}
+.card:hover {
+  transform: translateY(-8px);
+}
+.title{
+  font-family: var(--font-mono);
+  font-weight: 600;
+  margin-bottom: 15px;
+
+}
+.card-content{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
 }

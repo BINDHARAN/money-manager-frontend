@@ -25,6 +25,7 @@ import PropTypes from 'prop-types'
 import { styled } from '@mui/material/styles'
 import CloseIcon from '@mui/icons-material/Close'
 import { useHistory } from 'react-router-dom'
+import HomeDesc from './desc'
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
     padding: theme.spacing(2),
@@ -118,8 +119,9 @@ export function Home() {
   return (
     <div>
       <div className="home">
-        <h1 style={{ textAlign: 'left' }}>Welcome to Money Manager App</h1>
+        <h3 style={{ textAlign: 'left' }}>Welcome to Money Manager App</h3>
         <Button
+        className="home-add-btn"
           color="success"
           style={{ marginTop: '1rem' }}
           variant="contained"
@@ -129,6 +131,8 @@ export function Home() {
           Add
         </Button>
       </div>
+
+      <HomeDesc />
       <Box>
         <BootstrapDialog
           onClose={handleClose}

@@ -110,13 +110,19 @@ data.filter((i) => i.type === "personal").map(( i) => (personalexpense  = person
   return (
     <div className="charts">
        <div className="totalChart">
+
+      <p> Total Income and Expense</p>
       <Doughnut data={chartdata} />
       
      </div>
      <div  className="officeChart">
+       
+      <p> Total Office Income and Expense</p>
      <Doughnut data={chartdata2} />
      </div>
      <div  className="personalChart">
+       
+      <p> Total Personal Income and Expense</p>
      <Doughnut data={chartdata3} />
 
      </div>
