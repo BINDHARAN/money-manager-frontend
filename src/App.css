@@ -83,7 +83,7 @@
   width: 50%;
   margin: 40px auto 0;
   padding: 20px;
-  border: 3px double burlywood;
+  border: 7px double burlywood;
   font-family: var(--font-mono);
 
 }
@@ -92,7 +92,7 @@
   .totalChart,
 .officeChart,
 .personalChart {
-   
+  border: 5px double burlywood;
     width: 70%;
   }
 }
